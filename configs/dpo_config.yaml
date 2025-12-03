@@ -1,0 +1,21 @@
+policy_model: outputs/sft
+reference_model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+output_dir: outputs/dpo
+
+learning_rate: 0.000005
+batch_size: 2
+gradient_accumulation_steps: 4
+max_steps: 100
+beta: 0.1
+max_seq_length: 512
+logging_steps: 5
+save_steps: 50
+seed: 42
+
+# 这里的 use_lora 已经不会在 train_dpo.py 里使用了，可以保留也可以删掉
+use_lora: false
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+dpo_file: data/dpo_pairs.jsonl

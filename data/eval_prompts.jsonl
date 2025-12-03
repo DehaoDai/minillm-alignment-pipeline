@@ -1,0 +1,5 @@
+{"prompt": "Explain what a Markov chain is.", "keywords": ["next state", "current state", "history", "probability"]}
+{"prompt": "What is the Markov property?", "keywords": ["future", "present", "past", "depends only"]}
+{"prompt": "Give an intuitive definition of a stationary time series.", "keywords": ["mean", "variance", "constant", "over time"]}
+{"prompt": "What is a transition matrix in a Markov chain?", "keywords": ["probability", "rows sum to one", "from each state", "to every state"]}
+{"prompt": "Explain geometric ergodicity in simple terms.", "keywords": ["states", "time", "concept", "statistics", "Markov chain", "equal", "converge","stationary"]}

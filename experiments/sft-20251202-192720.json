@@ -1,0 +1,26 @@
+{
+  "kind": "sft",
+  "timestamp": "20251202-192720",
+  "output_dir": "outputs/sft",
+  "config": {
+    "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "output_dir": "outputs/sft",
+    "learning_rate": 1e-05,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 4,
+    "max_steps": 50,
+    "warmup_ratio": 0.03,
+    "max_seq_length": 512,
+    "logging_steps": 5,
+    "save_steps": 25,
+    "seed": 42,
+    "use_lora": true,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "sft_file": "data/sft_examples.jsonl"
+  },
+  "extra": {
+    "final_loss": 2.319111442565918
+  }
+}

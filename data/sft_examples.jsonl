@@ -1,0 +1,3 @@
+{"instruction": "What is conformal prediction?", "output": "Conformal prediction is a framework for constructing prediction sets or intervals with finite-sample validity guarantees under minimal distributional assumptions."}
+{"instruction": "Explain a Markov chain in simple terms.", "output": "A Markov chain is a stochastic process where the next state depends only on the current state, not on the full past history."}
+{"instruction": "What is a time series in statistics?", "output": "A time series is a sequence of observations indexed by time, often used to model temporal dependence and dynamics."}
