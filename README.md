@@ -89,7 +89,7 @@ mini-llm-alignment-pipeline/
 │
 ├── experiments/        ← auto-generated logs
 └── outputs/            ← trained model checkpoints
-
+```
 
 ## ⚡ Quickstart
 
@@ -101,27 +101,27 @@ pip3 install -r requirements.txt
 
 # Option 2
 pip install -r requirements.txt
-
+```
 ### 2. Run SFT Training
 ```bash
 python3 -m scripts.train_sft --config configs/sft_config.yaml
-
+```
 ### 3. Run DPO Training
 ```bash
 python3 -m scripts.train_dpo --config configs/dpo_config.yaml
-
+```
 ### 4. Evaluate all models
 ```bash
 python3 -m scripts.eval_batch \
   --base TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
   --sft outputs/sft \
   --dpo outputs/dpo
-
+```
 ### 5. Inspect Experiments logs
 ```bash
 ls experiments/
 cat experiments/sft-*.json
-
+```
 ## 📊 Evaluation & A/B Testing
 
 This project includes a lightweight but practical offline evaluation framework for comparing the base, SFT, and DPO models across domain-specific prompts in probability, Markov chains, and time-series analysis.
